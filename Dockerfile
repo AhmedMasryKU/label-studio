@@ -178,4 +178,4 @@ USER 1001
 EXPOSE 8080
 
 ENTRYPOINT ["./deploy/docker-entrypoint.sh"]
-CMD ["label-studio"]
+CMD ["label-studio", "start", "--init", "my_project", "-db", "postgresql"] 
